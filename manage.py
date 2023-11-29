@@ -2,8 +2,12 @@
 import os
 import sys
 
+import dotenv
+
 if __name__ == "__main__":
-    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "examen_ads.settings.dev")
+    dotenv.read_dotenv()
+
+    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "bakerydemo.settings.dev")
 
     from django.core.management import execute_from_command_line
 
