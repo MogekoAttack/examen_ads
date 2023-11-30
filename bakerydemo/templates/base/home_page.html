@@ -19,6 +19,12 @@
                         {% else %}
                             {{ page.hero_cta }}
                         {% endif %}
+                        <button onclick="javascript: window.open('/admin/snippets/liberria/cliente/add/','_self');">
+                            <h4>Registrate</h4>
+                        </button>
+                        <button onclick="javascript: window.open('/admin/snippets/liberria/carrito/add/','_self');">
+                            <h4>Comprar ahora</h4>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -37,7 +43,7 @@
                             {% endfor %}
                         </ul>
                         <a class="featured-cards__link" href="/breads">
-                            <span>View more of our breads</span>
+                            <span>Ver mas libros</span>
                             {% include "includes/chevron-icon.html" with class="featured-cards__chevron-icon" %}
                         </a>
                     {% endif %}
